@@ -1,0 +1,13 @@
+[package]
+name = "counter"
+edition = "2024.beta"
+license = "MIT"
+authors = ["Unmaykr (unmaykr@aftermath.finance)"]
+
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "framework/testnet"
+
+[addresses]
+counter = "0x0"
