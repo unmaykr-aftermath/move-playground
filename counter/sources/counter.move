@@ -27,4 +27,8 @@ module counter::counter {
         counter.count = counter.count + 1;
         event::emit(IncrementedCounter { count: counter.count });
     }
+
+    public fun count(counter: &Counter): u64 {
+        counter.count
+    }
 }
